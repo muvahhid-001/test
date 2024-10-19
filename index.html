@@ -9,34 +9,36 @@
     <title>finalProject</title>
   <link href="style.css" rel="stylesheet"></head>
   <body>
-
+    <div class="overlay"></div>
+    <div class="flex">
+<div class="flex-cont">
     <header>
     
       <div class="header">
            <div class="header__menu">
-                   <button href="#" class="header__link list"><img src="img/menu.svg" alt="Меню" class="header__menu-img" width="18px" height="16px" style="padding-top: 12px;"></button>
+                   <button class="header__link list"><img src="img/menu.svg" alt="Меню" class="header__menu-img" width="18px" height="16px" style="padding-top: 12px;"></button>
                    <div class="header__link logo"><img src="img/cps.svg" alt="Лого" class="header__logo-img" width="96.55px" height="50.81px"></div>
                    <div class="header__divider divider"></div>
-                   <button href="#" class="header__link call"><img src="img/call.svg" alt="Звонок" class="header__menu-img" width="18px" height="18px" style="padding-left: 10px;"></button>
-                   <button href="#" class="header__link chat"><img src="img/chat.svg" alt="Чат" class="header__menu-img" width="20px" height="20px" style="padding-left: 10px;"></button>
-                   <button href="#" class="header__link contact"><img src="img/contact.svg" alt="Контакты" class="header__menu-img" width="20px" height="18px" style="padding-left: 10px;"></button>
+                   <button class="header__link call"><img src="img/call.svg" alt="Звонок" class="header__menu-img" width="18px" height="18px" style="padding-left: 10px;"></button>
+                   <button class="header__link chat"><img src="img/chat.svg" alt="Чат" class="header__menu-img" width="20px" height="20px" style="padding-left: 10px;"></button>
+                   <button class="header__link contact"><img src="img/contact.svg" alt="Контакты" class="header__menu-img" width="20px" height="18px" style="padding-left: 10px;"></button>
                    <div class="header__divider divider-two"></div>
-                   <button class="header__beforetitle"></button>
-                   <button href="#" class="header__link repair"><img src="img/repair.svg" alt="Ремонт" class="header__menu-img" width="20px" height="20px"></button>
-                   <button class="header__beforetitle-two"></button>
-                   <button href="#" class="header__link search"><img src="img/search.svg" alt="Поиск" class="header__menu-img" width="20px" height="20px" style="padding-left: 10px;"></button>
+                   <button class="header__link repair"><img src="img/repair.svg" alt="Ремонт" class="header__menu-img" width="20px" height="20px"></button>
+                   <button class="header__link search"><img src="img/search.svg" alt="Поиск" class="header__menu-img" width="20px" height="20px" style="padding-left: 10px;"></button>
            </div>
       </div>
    </header>
 
-
-
-
+   
     <main>
        
       <div class="title">
        <div class="title__highlight"></div>
        <h1 class="title__text">Услуги и сервисы</h1>
+       <div class="title__button">
+       <button class="title_application">Оставить заявку <img class="title_img-application" src="img/checkstatus.svg" width="40px" height="40px"></button>
+       <button class="title_repair">Статус ремонта <img class="title_img-repair" src="img/repair-fon.svg" width="40px" height="40px"></button>
+       </div>
       </div>
    
       <nav class="navigation">
@@ -64,7 +66,7 @@
     </div>
 
 
-       <p class="services__title">Ремонт техники различных брендов</p>
+       <h1 class="services__title">Ремонт техники различных брендов</h1>
 
        <div class="swiper">
            <div class="swiper-wrapper">
@@ -104,7 +106,7 @@
 
 
 
-    <p class="services__title-two">Ремонт техники различных видов техники</p>
+    <h1 class="services__title-two">Ремонт техники различных видов техники</h1>
     <div class="swiper swiper-two">
         <div class="swiper-wrapper">
             <button class="swiper-slide two">Ремонт ноутбуков<img class="go go-two" src="img/go.png"></button>
@@ -131,7 +133,7 @@
     <button class="read-more-two" style="display: none;"><img class="arrow-img-two" src="img/arrow.png" alt="Стрелка">Показать все</button>
 
 
-    <p class="services__title-three">ЦЕНЫ НА УСЛУГИ</p>
+    <h1 class="services__title-three">ЦЕНЫ НА УСЛУГИ</h1>
 
     <div class="swiper swiper-three">
         <ul class="swiper-wrapper wrapper-three">
@@ -170,79 +172,110 @@
     </div>
 
     <ul class="list-equipment-three">
-        <li class="list_li-three list-equipment-three__title"><p class="list-equipment-three__name-service-title">Ремонтные услуги</p><p class="list-equipment-three__price-title">Цена</p><p class="list-equipment-three__time-title">Срок</p></li>
-        <li class="list_li-three"><p class="list-equipment-three__name-service">Диагностика</p><p class="list-equipment-three__price style-1">Бесплатно</p><p class="list-equipment-three__time style-1 style-2">30 мин 🗲 </p><button class="list-equipment-three__bt-buy">ЗАКАЗАТЬ</button></li>
+        <li class="list_li-three list-equipment-three__title none"><p class="list-equipment-three__name-service-title">Ремонтные услуги</p><p class="list-equipment-three__price-title">Цена</p><p class="list-equipment-three__time-title">Срок</p></li>
+        <div class="list-equipment-three__bg-color">
+        <li class="list_li-three"><p class="list-equipment-three__name-service">Диагностика</p><p class="list-equipment-three__price style-1">Бесплатно</p><p class="list-equipment-three__time style-1 style-2">30 мин </p><img src="img/molnia.svg" class="img-molnia" width="20px" height="20px"><button class="list-equipment-three__bt-buy">ЗАКАЗАТЬ</button></li>
         <li class="list_li-three"><p class="list-equipment-three__name-service">Замена дисплея</p><p class="list-equipment-three__price">1000 &#8381;</p><p class="list-equipment-three__time">30-120 мин</p><button class="list-equipment-three__bt-buy">ЗАКАЗАТЬ</button></li>
         <li class="list_li-three"><p class="list-equipment-three__name-service">Замена полифонического динамика</p><p class="list-equipment-three__price">1000 &#8381;</p><p class="list-equipment-three__time">30-120 мин</p><button class="list-equipment-three__bt-buy">ЗАКАЗАТЬ</button></li>
         <li class="list_li-three"><p class="list-equipment-three__name-service">Тестирование с выдачей заключения</p><p class="list-equipment-three__price">1000 &#8381;</p><p class="list-equipment-three__time">30-120 мин</p><button class="list-equipment-three__bt-buy">ЗАКАЗАТЬ</button></li>
         <li class="list_li-three"><p class="list-equipment-three__name-service">Замена программного обеспечения</p><p class="list-equipment-three__price">1000 &#8381;</p><p class="list-equipment-three__time">30-120 мин</p><button class="list-equipment-three__bt-buy">ЗАКАЗАТЬ</button></li>
+    </div> 
     </ul>
-
+    
     <aside class="comeric-info">
         <p class="comeric-info__title">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-        <p class="comeric-info__give-comeric">Получить коммерческое предложение <img src="img/Line.svg" class="comeric-img"></p>
-    </aside>
-
-</main>
-
-
-<div class="overlay"></div>
-
-    <section class="burger-menu">
-     <header>
-         <div class="header-burger">
-             <button class="header__close"><div class="header__close-bg"></div></button>
-             <img src="img/logo.svg" alt="Лого" class="logo" width="97px" height="51px">
-             <button class="search"><div class="header__search-bg"></div></button>
-         </div>
-     </header>
-    
-     <nav class="list">
-         <ul class="list-li">
-             <div class="divider"></div>
-             <li class="list-li__li-link"><a href="#" class="list-li__a active">Услуги и сервисы</a></li>
-             <li class="list-li__li-link"><a href="#" class="list-li__a">Продавцам техники</a></li>
-             <li class="list-li__li-link"><a href="#" class="list-li__a">Партнерам</a></li>
-             <li class="list-li__li-link"><a href="#" class="list-li__a">Производителям</a></li>
-             <li class="list-li__li-link"><a href="#" class="list-li__a">Ремонт техники</a></li>
-             <li class="list-li__li-link"><a href="#" class="list-li__a">Наши сервисные центры</a></li>
-             <li class="list-li__li-link"><a href="#" class="list-li__a">Корпоративным клиентам</a></li>
-             <li class="list-li__li-link"><a href="#" class="list-li__a">Контакты</a></li>
-         </ul>
-     </nav>
-    
-     <div class="down-menu">
-         <ul class="down-menu__ul-DMenu">
-             <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link phone phone-bg"></a></li>
-             <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link comment comment-bg"></a></li>
-             <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link man man-bg"></a></li>
-         </ul>
-     </div>
+        <button class="comeric-info__give-comeric"><a class="comeric-bt" href="#">Получить коммерческое предложение <img src="img/Line.svg" class="comeric-img"></a>
+    </button></aside>
+    <footer>
+        <div class="footer-div">
+         <p class="title-one">© 2019 CPS <br> Разработано командой Apesong</p>
+         <p class="title-two">Политика конфиденциальности</p>
+         <p class="title-three">Информация, размещенная на данной странице, не является публичной офертой</p>
+        </div>
+     </footer>
      
-     <div class="down-info">
-         <a href="mailto:mail@cps.com" class="email">mail@cps.com</a>
-         <a href="tel:8008908900" class="tel">8 800 890 8900</a>
-    
-         <ul class="down-info__change-lang">
-             <li class="down-info_chanlg"><button class="button lang-active" name="RU">RU</button></li>
-             <li class="down-info_chanlg"><button class="button" name="EN">EN</button></li>
-             <li class="down-info_chanlg"><button class="button" name="CH">CH</button></li>
-         </ul>
-    
+</main>
+</div>
+
+<div class="flex-cont-two">
+<section class="burger-menu">
+ <header>
+     <div class="header-burger">
+         <button class="header__close"><div class="header__close-bg"></div></button>
+         <img src="img/logo.svg" alt="Лого" class="logo" width="97px" height="51px">
+         <button class="header__search"><div class="header__search-bg"></div></button>
      </div>
-    
-    </section>
+ </header>
+
+ <nav class="list">
+     <ul class="list-li">
+         <div class="divider"></div>
+         <li class="list-li__li-link"><a href="#" class="list-li__a active">Услуги и сервисы</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Продавцам техники</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Партнерам</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Производителям</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Ремонт техники</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Наши сервисные центры</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Корпоративным клиентам</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Контакты</a></li>
+     </ul>
+ </nav>
 
 
-<footer>
-    <p class="title-one">© 2019 CPS <br> Разработано командой Apesong</p>
-    <p class="title-two">Политика конфиденциальности</p>
-    <p class="title-three">Информация, размещенная на данной странице, не является публичной офертой</p>
-</footer>
+ 
+ <div class="down-info">
+    <div class="down-info__down-menu">
+        <ul class="down-menu__ul-DMenu">
+            <li class="down-menu__li-DMenu"><button class="down-menu__link phone phone-bg"></button></li>
+            <li class="down-menu__li-DMenu"><button class="down-menu__link comment comment-bg"></button></li>
+            <li class="down-menu__li-DMenu"><button class="down-menu__link man man-bg"></button></li>
+        </ul>
+    </div>
+     <a href="mailto:mail@cps.com" class="email">mail@cps.com</a>
+     <a href="tel:8008908900" class="tel">8 800 890 8900</a>
+
+     <ul class="down-info__change-lang">
+         <li class="down-info_chanlg"><button class="button lang-active" name="RU">RU</button></li>
+         <li class="down-info_chanlg"><button class="button" name="EN">EN</button></li>
+         <li class="down-info_chanlg"><button class="button" name="CH">CH</button></li>
+     </ul>
+
+ </div>
+
+</section>
 
 
+</div>
+</div>
 
+<section class="module-call">
+        <form class="module-call__form">
+            <div class="module-call__main">
+            <button class="module__close"><div class="header__close-bg"></div></button>
+            <div class="title__highlight"></div>
+            <label for="phone"><h1 class="module-call__title">Заказать звонок</h1></label>
+            <input class="module-call__input" type="tel" id="phone" name="phone" placeholder=" Телефон" required>
+            <p class="personal">Нажимая “отправить”, вы даете согласие на <span class="red">обработку персональных данных</span> и соглашаетесь с нашей <span class="red">политикой конфиденциальности</span></p>
+            <button class="module-call_button" type="submit">Отправить</button>
+            </div>
+        </form>
+</section>
 
+<section class="module-connection">
+    <form class="module-connection__form">
+        <div class="module-connection__main">
+        <button class="module-connection__close"><div class="header__close-bg"></div></button>
+        <div class="title__highlight"></div>
+        <label for="phone-two"><h1 class="module-connection__title">Обратная связь</h1></label>
+        <input class="module-connection__input-name" type="tel" id="phone-two" name="phone-two" placeholder=" Телефон" required>
+        <input type="text" id="name" name="name" placeholder=" Имя" required>
+        <input type="email" id="email" name="email" placeholder=" Электронная почта" required>
+        <textarea name="message" id="message" rows="8" placeholder=" Сообщение"></textarea>
+        <p class="personal">Нажимая “отправить”, вы даете согласие на <span class="red">обработку персональных данных</span> и соглашаетесь с нашей <span class="red">политикой конфиденциальности</span></p>
+        <button class="module-connection_button" type="submit">Отправить</button>
+        </div>
+    </form>
+</section>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
